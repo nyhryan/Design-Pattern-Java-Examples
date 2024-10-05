@@ -13,8 +13,9 @@ public class Main {
         mario.setAttackStrategy(AttackStrategyFactory.getStrategy(AttackType.FIRE));
         mario.attack(); // 🔥 Fire Attack!
 
+        // Using enum instead of factory
         System.out.println(">> Ice flower power up!");
-        mario.setAttackStrategy(AttackStrategyFactory.getStrategy(AttackType.ICE));
+        mario.setAttackStrategy(AttackStrategyType.ICE.getStrategy());
         mario.attack(); // ❄️ Ice Attack!
     }
 }

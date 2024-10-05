@@ -17,3 +17,4 @@ public class AttackStrategyFactory {
         return strategies.get(type);
     }
 }
+
