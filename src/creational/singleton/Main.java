@@ -9,14 +9,14 @@ public class Main {
         // Test if instances in two threads are the same
 
         // Thread safe ones
-        test(EagerSingleton.class);
+//        test(EagerSingleton.class);
 //        test(DCLSingleton.class);
 //        test(LazyHolderSingleton.class);
 //        test(EnumSingleton.class);
 
         // Thread unsafe one
         // Try multiple times to see the difference of instance hash
-//        test(ThreadUnsafeLazySingleton.class);
+        test(ThreadUnsafeLazySingleton.class);
 
         // Singleton logger Usage
 //        ILoggable logger = ThreadUnsafeLazySingleton.getInstance();
